@@ -60,4 +60,5 @@ h2.container-title {
 
 .card-content ul li {
     margin: 20px 0px 20px;
+    text-align: justify;
 }
