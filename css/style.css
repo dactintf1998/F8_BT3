@@ -14,10 +14,16 @@ CV body {
     margin-right: auto;
     padding: 4%;
 }
+.title h1 {
+    font-size: 45px;
+}
 
 .title {
     margin-top: 80px;
     text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title * {
@@ -194,7 +200,7 @@ a {
     margin-right: 100px;
 }
 
-.avatar-holder{
+.avatar-holder {
     width: 100px;
     height: 100px;
     border-radius: 50%;
