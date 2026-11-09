@@ -1,4 +1,4 @@
-body {
+CV body {
     font-family:
         "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 35px;
@@ -70,4 +70,132 @@ h2.container-title {
 .card-content ul li {
     margin: 20px 0px 20px;
     text-align: justify;
+}
+
+/* Menu */
+
+.wrapper2 {
+    background-color: #706eff;
+    width: 99%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+
+.nav-bar {
+    width: 0.8;
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    padding: 0px;
+    font-size: 0px;
+}
+div {
+    display: inline-block;
+}
+
+.nav-list {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.nav-list-content {
+    display: none;
+    position: absolute;
+    top: 96px;
+    left: -3px;
+    margin-left: auto;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 285px;
+}
+
+.nav-list:hover .nav-list-content {
+    display: block;
+}
+
+a.nav-list-item {
+    padding: 0px 0px;
+    display: block;
+    min-height: 100px;
+    min-width: 285px;
+    justify-content: left;
+    margin-left: auto;
+    color: #fff;
+    background-color: #380bff;
+}
+
+.nav-item,
+.nav-list-item {
+    list-style-type: none;
+    font-size: 32px;
+}
+
+.nav-item {
+    padding: 0px 40px;
+    display: inline-block;
+    position: relative;
+    min-height: 100px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #380bff;
+}
+
+button.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px;
+}
+
+button.nav-item:hover a {
+    background-color: #fff;
+    color: #380bff;
+    transition: 0.3s;
+}
+
+button.nav-item:hover {
+    background-color: #fff;
+    color: #380bff;
+    transition: 0.3s;
+}
+a {
+    text-decoration: none;
+}
+
+/* Form */
+.form-text {
+    color: white;
+}
+
+.wrapper3 {
+    background-color: #0c0720;
+    width: 98%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper-content {
+    margin: 25px 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-card {
+    padding: 25px 0px;
+    min-width: 100%;
+}
+.content-card-2 {
+    display: inline-block;
+    width: 200px;
+    margin-right: 100px;
+}
+
+.avatar-holder{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
