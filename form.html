@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Index</title>
+        <title>Form</title>
         <!-- Styles -->
-        <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+        <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <!-- Global cdn -->
         <link
@@ -16,7 +16,192 @@
             referrerpolicy="no-referrer"
         />
     </head>
-    <body>
-        <h1>Form</h1>
+    <body class="form-text">
+        <div class="wrapper3">
+            <div class="wrapper-content">
+                <form action="!#" method="post">
+                    <div class="content-card">
+                        <!-- Name -->
+                        <div class="content-card-2">
+                            <label
+                                ><p>Display name</p>
+                                <br />
+                                <input
+                                    type="text"
+                                    autocomplete="off"
+                                    name="name"
+                                    id="name"
+                                    autocorrect="off"
+                                />
+                            </label>
+                        </div>
+                        <!-- Avatar -->
+                        <div class="content-card-2">
+                            <label>
+                                <img
+                                    class="avatar-holder"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                                    alt="Avatar"
+                                />
+                                <input
+                                    type="file"
+                                    name="avatar"
+                                    id="avatar"
+                                    accept="image/*"
+                                    hidden
+                                />
+                                <br />
+                            </label>
+                        </div>
+                    </div>
+                    <br />
+                    <!-- Info -->
+                    <div class="content-card">
+                        <!-- Date -->
+                        <div class="content-card-2">
+                            <label>
+                                <p>Date of birth</p>
+                                <br />
+                                <input
+                                    type="date"
+                                    name="dateOfBirth"
+                                    id="dateOfBirth"
+                                />
+                            </label>
+                        </div>
+                        <!-- Gender -->
+                        <div class="content-card-2">
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="male"
+                                    value="male"
+                                />Nam
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="female"
+                                    value="female"
+                                />Nữ
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="other"
+                                    value="other"
+                                />Khác
+                            </label>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="content-card">
+                        <!-- Phone -->
+                        <div class="content-card-2">
+                            <label>
+                                <p>Phone number</p>
+                                <br />
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                />
+                            </label>
+                        </div>
+                        <!-- Address -->
+                        <div class="content-card-2">
+                            <label>
+                                <p>Address</p>
+                                <br />
+                                <input
+                                    type="text"
+                                    autocomplete="off"
+                                    name="address"
+                                    id="address"
+                                    autocorrect="off"
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    <br />
+                    <!-- Email -->
+                    <div class="content-card">
+                        <label>
+                            <p>Email</p>
+                            <br />
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                autocomplete="off"
+                                autocorrect="off"
+                        /></label>
+                    </div>
+                    <br />
+                    <!-- Password -->
+                    <div class="content-card">
+                        <div class="content-card-2">
+                            <label>
+                                <p>Password</p>
+                                <br />
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    autocomplete="off"
+                                />
+                            </label>
+                        </div>
+                        <div class="content-card-2">
+                            <label>
+                                <p>Confirm password</p>
+                                <br />
+                                <input
+                                    type="cPassword"
+                                    name="cPassword"
+                                    id="cPassword"
+                                    autocomplete="off"
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="content-card">
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="communicating"
+                                id="subcribe"
+                                value="1"
+                            />Subscribe to Newsletter </label
+                        ><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="communicating"
+                                id="promotion"
+                                value="2"
+                            />Receive Promotional Emails </label
+                        ><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="communicating"
+                                id="product"
+                                value="3"
+                            />Get Product </label
+                        ><br />
+                    </div>
+                    <div class="content-card">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
