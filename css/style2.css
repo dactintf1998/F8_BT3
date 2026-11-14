@@ -1,0 +1,258 @@
+/* .wrapper */
+body {
+    font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 32px;
+    background-color: rgb(231, 231, 231);
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 10px auto;
+    width: 100vw;
+    height: 150vh;
+    background-color: #476ecd;
+}
+
+ul.nav-bar {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 0;
+}
+
+li.nav-item {
+    padding: 1.5rem;
+    margin: 0px auto;
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #3e5cca;
+}
+li.nav-item + li.nav-item {
+    border-left: 3px solid #476ecd;
+}
+
+li.nav-item div {
+    width: 100%;
+}
+li.nav-item div a {
+    color: white;
+}
+
+li.nav-item div a:active {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+li.nav-item:hover,
+li.nav-item:hover * {
+    background-color: white;
+    color: #476ecd;
+    transition: 0s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+    width: fit-content;
+    position: absolute;
+    margin-left: auto;
+}
+
+.dropdown-content a:hover {
+    background-color: #c2d2ec;
+    color: white;
+    transition: 0s;
+}
+.dropdown-content a:not(:last-child)::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #476ecd;
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
+}
+
+.dropdown-content a::before {
+    content: "\25B6  ";
+}
+
+/* form */
+
+.nav-bar {
+    width: 0.8;
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    padding: 0px;
+    font-size: 0px;
+}
+
+div {
+    display: inline-block;
+}
+
+.nav-list {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.nav-list-content {
+    display: none;
+    position: absolute;
+    top: 96px;
+    left: -3px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 285px;
+}
+
+.nav-list:hover .nav-list-content {
+    display: block;
+}
+
+.nav-item,
+.nav-list-item {
+    list-style-type: none;
+    font-size: 32px;
+}
+
+.nav-item {
+    padding: 0px 40px;
+    display: inline-block;
+    position: relative;
+    min-height: 100px;
+    width: fit-content;
+    color: #fff;
+    background-color: #380bff;
+}
+
+button.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px;
+}
+
+button.nav-item:hover *,
+button.nav-item:hover {
+    background-color: #fff;
+    color: #380bff;
+    transition: 0.3s;
+}
+
+/* button.nav-item:hover {
+    background-color: #fff;
+    color: #380bff;
+    transition: 0.3s;
+} */
+a {
+    text-decoration: none;
+}
+
+a.nav-list-item {
+    padding: 0px 0px;
+    display: block;
+    min-height: 100px;
+    min-width: 285px;
+    justify-content: left;
+    margin-left: auto;
+    color: #fff;
+    background-color: #380bff;
+}
+/* --------------Form---------------- */
+
+h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1.5rem;
+}
+
+.form-text {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.wrapper {
+}
+
+.form-content {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.card-content-1 {
+    display: inline-block;
+    width: 45%;
+}
+
+.card-content-2:last-child {
+    text-align: left;
+}
+
+.card-content-3 {
+    display: inline-block;
+    width: 50%;
+    padding: 1rem 1.5rem;
+    margin: 0;
+    text-align: left;
+}
+input.card-input-3 {
+    width: 80%;
+    margin: 1rem 0;
+}
+
+input.card-input-3:focus {
+    border: 3px solid yellow;
+}
+
+input.card-input-3:invalid {
+    border: 3px solid red;
+}
+
+label.card-content-3 h3.required::after {
+    content: " *";
+}
+
+.avatar-holder {
+    width: 9rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn-submit {
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 10%;
+    background-color: #fff;
+    color: #380bff;
+}
+
+.btn-submit:hover {
+    font-weight: bold;
+    background-color: #380bff;
+    color: white;
+}
+.btn-submit:active {
+    font-weight: bold;
+    background-color: white;
+    color: #380bff;
+}

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style4.css" />
+        <!-- Global cdn -->
+        <link
+            rel="stylesheet"
+            href="https://dev.prismjs.com/themes/prism.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <div class="header">
+                <div class="logo-header">
+                    <img
+                        src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+                        alt="Logo F8"
+                    />
+                </div>
+                <p class="p-header">QUAY LẠI</p>
+                <input
+                    class="searchbox-header"
+                    type="text"
+                    autocomplete="off"
+                    autocorrect="off"
+                    placeholder="Tìm khóa học, bài tập, hỏi đáp,..."
+                />
+                <p class="p-header">Khóa học của tôi</p>
+                <div class="avatar-header">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <!-- End header -->
+            <!-- Sidebar -->
+            <div class="side-bar">
+                <div class="side-bar-container">
+                    <p class="name">Ếch Trendy</p>
+                    <p class="quote">
+                        Cùng chú ếch nhỏ khám phá thế giới Web đầy biến động.
+                        Cập nhật trending nhanh như cách ếch đớp mồi! ⌨️🌿
+                    </p>
+                </div>
+            </div>
+            <!-- End of sidebar -->
+            <!-- Start of contain -->
+            <div class="content">
+                <h1>
+                    Số 0 bị thay bằng giá trị mặc định: phân biệt || và ?? trong
+                    JavaScript
+                </h1>
+                <!-- Writer -->
+                <div class="writer">
+                    <div class="avatar">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                            alt=""
+                        />
+                    </div>
+                    <div class="writer-info">
+                        <p class="writer-name" style="font-weight: bold">
+                            Ếch Trendy
+                        </p>
+                        <br />
+                        <p class="writer-subscription" style="color: #aaa">
+                            một ngày trước * 9 phút đọc
+                        </p>
+                    </div>
+                </div>
+                <!-- End writer -->
+                <!-- Content card 1 -->
+                <div class="content-card">
+                    <h2>Vì sao số 0 bị thay bằng giá trị mặc định?</h2>
+                    <p>
+                        Câu trả lời ngắn: || (toán tử OR logic) trả về vế phải
+                        khi vế trái là falsy, còn ?? (toán tử nullish
+                        coalescing) chỉ trả về vế phải khi vế trái là null hoặc
+                        undefined. Số 0 và chuỗi rỗng '' đều là falsy, nên ||
+                        coi chúng như "không có dữ liệu" và thay bằng giá trị
+                        mặc định.<br />
+                        Hai thuật ngữ cần nắm trước khi đi tiếp. Falsy là giá
+                        trị bị coi như false khi JavaScript cần một giá trị
+                        boolean, ví dụ trong điều kiện if (...). Nullish hẹp hơn
+                        nhiều: chỉ gồm null và undefined, nghĩa là "chưa có giá
+                        trị".
+                    </p>
+                    <pre><code class="language-javascript">
+console.log(0 || 10);        // 10
+console.log(0 ?? 10);        // 0
+console.log('' || 'N/A');    // 'N/A'
+console.log('' ?? 'N/A');    // ''
+console.log(null ?? 'N/A');  // 'N/A'
+                </code></pre>
+                    <p>
+                        Bạn có thể dán đoạn trên vào tab Console của DevTools
+                        (nhấn F12) để tự kiểm tra. Kết quả ghi trong comment là
+                        kết quả mong đợi theo mô tả hành vi trên MDN Web Docs.
+                    </p>
+                    <img
+                        src="https://files.f8.edu.vn/f8-prod/blog_posts/15266/section_0_261113080523_6af662538f19f2.37878381.png"
+                        alt=""
+                    />
+                    <p>
+                        Lỗi này khó phát hiện vì code vẫn chạy, không có thông
+                        báo đỏ nào. Người dùng nhập số lượng 0, hệ thống lưu 1.
+                        Người dùng cố ý để trống ghi chú, màn hình lại hiện
+                        "Không có ghi chú" như một nội dung mặc định. Đây là lỗi
+                        logic, không phải lỗi cú pháp.
+                    </p>
+                </div>
+                <!-- End content card 1 -->
+                <!-- Content card 2 -->
+                <div class="content-card">
+                    <h2>Bảng falsy và nullish: giá trị nào bị thay?</h2>
+                    <p>
+                        JavaScript có 8 giá trị falsy thường gặp. Bảng dưới đây
+                        so sánh kết quả của x || 'mặc định' (cột OR) và x ??
+                        'mặc định' (cột ??) với từng giá trị.
+                    </p>
+                    <img
+                        src="https://files.f8.edu.vn/f8-prod/blog_posts/15266/section_1_261113080536_6af662603152c1.59722114.png"
+                        alt=""
+                    />
+                    <p>
+                        ?? giữ lại 6 trên 8 giá trị falsy. Đó là điểm mạnh, đồng
+                        thời cũng là giới hạn. NaN đi qua ?? nguyên vẹn. Nếu bạn
+                        ép kiểu Number('abc') rồi viết ?? 1, kết quả vẫn là NaN,
+                        không phải 1. ?? không kiểm tra dữ liệu có hợp lệ hay
+                        không; nó chỉ trả lời câu hỏi "giá trị này đã tồn tại
+                        chưa". Kiểm tra hợp lệ (số âm, NaN, chuỗi toàn khoảng
+                        trắng) vẫn là việc riêng bạn phải làm.
+                    </p>
+                </div>
+                <!-- End content card 2 -->
+                 <!-- Content card 1 -->
+                <div class="content-card">
+                    <h2>Vì sao số 0 bị thay bằng giá trị mặc định?</h2>
+                    <p>
+                        Câu trả lời ngắn: || (toán tử OR logic) trả về vế phải
+                        khi vế trái là falsy, còn ?? (toán tử nullish
+                        coalescing) chỉ trả về vế phải khi vế trái là null hoặc
+                        undefined. Số 0 và chuỗi rỗng '' đều là falsy, nên ||
+                        coi chúng như "không có dữ liệu" và thay bằng giá trị
+                        mặc định.<br />
+                        Hai thuật ngữ cần nắm trước khi đi tiếp. Falsy là giá
+                        trị bị coi như false khi JavaScript cần một giá trị
+                        boolean, ví dụ trong điều kiện if (...). Nullish hẹp hơn
+                        nhiều: chỉ gồm null và undefined, nghĩa là "chưa có giá
+                        trị".
+                    </p>
+                    <pre><code class="language-javascript">
+console.log(0 || 10);        // 10
+console.log(0 ?? 10);        // 0
+console.log('' || 'N/A');    // 'N/A'
+console.log('' ?? 'N/A');    // ''
+console.log(null ?? 'N/A');  // 'N/A'
+                </code></pre>
+                    <p>
+                        Bạn có thể dán đoạn trên vào tab Console của DevTools
+                        (nhấn F12) để tự kiểm tra. Kết quả ghi trong comment là
+                        kết quả mong đợi theo mô tả hành vi trên MDN Web Docs.
+                    </p>
+                    <img
+                        src="https://files.f8.edu.vn/f8-prod/blog_posts/15266/section_0_261113080523_6af662538f19f2.37878381.png"
+                        alt=""
+                    />
+                    <p>
+                        Lỗi này khó phát hiện vì code vẫn chạy, không có thông
+                        báo đỏ nào. Người dùng nhập số lượng 0, hệ thống lưu 1.
+                        Người dùng cố ý để trống ghi chú, màn hình lại hiện
+                        "Không có ghi chú" như một nội dung mặc định. Đây là lỗi
+                        logic, không phải lỗi cú pháp.
+                    </p>
+                </div>
+                <!-- End content card 1 -->
+                <!-- Content card 2 -->
+                <div class="content-card">
+                    <h2>Bảng falsy và nullish: giá trị nào bị thay?</h2>
+                    <p>
+                        JavaScript có 8 giá trị falsy thường gặp. Bảng dưới đây
+                        so sánh kết quả của x || 'mặc định' (cột OR) và x ??
+                        'mặc định' (cột ??) với từng giá trị.
+                    </p>
+                    <img
+                        src="https://files.f8.edu.vn/f8-prod/blog_posts/15266/section_1_261113080536_6af662603152c1.59722114.png"
+                        alt=""
+                    />
+                    <p>
+                        ?? giữ lại 6 trên 8 giá trị falsy. Đó là điểm mạnh, đồng
+                        thời cũng là giới hạn. NaN đi qua ?? nguyên vẹn. Nếu bạn
+                        ép kiểu Number('abc') rồi viết ?? 1, kết quả vẫn là NaN,
+                        không phải 1. ?? không kiểm tra dữ liệu có hợp lệ hay
+                        không; nó chỉ trả lời câu hỏi "giá trị này đã tồn tại
+                        chưa". Kiểm tra hợp lệ (số âm, NaN, chuỗi toàn khoảng
+                        trắng) vẫn là việc riêng bạn phải làm.
+                    </p>
+                </div>
+                <!-- End content card 2 -->
+                 <!-- Content card 1 -->
+                <div class="content-card">
+                    <h2>Vì sao số 0 bị thay bằng giá trị mặc định?</h2>
+                    <p>
+                        Câu trả lời ngắn: || (toán tử OR logic) trả về vế phải
+                        khi vế trái là falsy, còn ?? (toán tử nullish
+                        coalescing) chỉ trả về vế phải khi vế trái là null hoặc
+                        undefined. Số 0 và chuỗi rỗng '' đều là falsy, nên ||
+                        coi chúng như "không có dữ liệu" và thay bằng giá trị
+                        mặc định.<br />
+                        Hai thuật ngữ cần nắm trước khi đi tiếp. Falsy là giá
+                        trị bị coi như false khi JavaScript cần một giá trị
+                        boolean, ví dụ trong điều kiện if (...). Nullish hẹp hơn
+                        nhiều: chỉ gồm null và undefined, nghĩa là "chưa có giá
+                        trị".
+                    </p>
+                    <pre><code class="language-javascript">
+console.log(0 || 10);        // 10
+console.log(0 ?? 10);        // 0
+console.log('' || 'N/A');    // 'N/A'
+console.log('' ?? 'N/A');    // ''
+console.log(null ?? 'N/A');  // 'N/A'
+                </code></pre>
+                    <p>
+                        Bạn có thể dán đoạn trên vào tab Console của DevTools
+                        (nhấn F12) để tự kiểm tra. Kết quả ghi trong comment là
+                        kết quả mong đợi theo mô tả hành vi trên MDN Web Docs.
+                    </p>
+                    <img
+                        src="https://files.f8.edu.vn/f8-prod/blog_posts/15266/section_0_261113080523_6af662538f19f2.37878381.png"
+                        alt=""
+                    />
+                    <p>
+                        Lỗi này khó phát hiện vì code vẫn chạy, không có thông
+                        báo đỏ nào. Người dùng nhập số lượng 0, hệ thống lưu 1.
+                        Người dùng cố ý để trống ghi chú, màn hình lại hiện
+                        "Không có ghi chú" như một nội dung mặc định. Đây là lỗi
+                        logic, không phải lỗi cú pháp.
+                    </p>
+                </div>
+                <!-- End content card 1 -->
+                <!-- Content card 2 -->
+                <div class="content-card">
+                    <h2>Bảng falsy và nullish: giá trị nào bị thay?</h2>
+                    <p>
+                        JavaScript có 8 giá trị falsy thường gặp. Bảng dưới đây
+                        so sánh kết quả của x || 'mặc định' (cột OR) và x ??
+                        'mặc định' (cột ??) với từng giá trị.
+                    </p>
+                    <img
+                        src="https://files.f8.edu.vn/f8-prod/blog_posts/15266/section_1_261113080536_6af662603152c1.59722114.png"
+                        alt=""
+                    />
+                    <p>
+                        ?? giữ lại 6 trên 8 giá trị falsy. Đó là điểm mạnh, đồng
+                        thời cũng là giới hạn. NaN đi qua ?? nguyên vẹn. Nếu bạn
+                        ép kiểu Number('abc') rồi viết ?? 1, kết quả vẫn là NaN,
+                        không phải 1. ?? không kiểm tra dữ liệu có hợp lệ hay
+                        không; nó chỉ trả lời câu hỏi "giá trị này đã tồn tại
+                        chưa". Kiểm tra hợp lệ (số âm, NaN, chuỗi toàn khoảng
+                        trắng) vẫn là việc riêng bạn phải làm.
+                    </p>
+                </div>
+                <!-- End content card 2 -->
+            </div>
+            <!-- End of content -->
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css"
+        rel="stylesheet"
+    />
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"
+        integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+</html>

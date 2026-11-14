@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style2.css" />
+        <!-- Global cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="form-text">
+        <div class="wrapper">
+            <form class="form-content">
+                <!-- Div 1 -->
+                <div class="card-content-1">
+                    <!-- Avatar -->
+                    <label class="card-content-3">
+                        <img
+                            class="avatar-holder"
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                            alt="Avatar"
+                        />
+                        <input
+                            type="file"
+                            name="avatar"
+                            id="avatar"
+                            accept="image/*"
+                            hidden
+                        />
+                    </label>
+                    <br />
+                    <!-- Dob -->
+                    <label class="card-content-3">
+                        <h3>Date of birth</h3>
+                        <input
+                            type="date"
+                            name="dateofbirth"
+                            id="dateofbirth"
+                        />
+                    </label>
+                    <br />
+                    <!-- Gender -->
+                    <label class="card-content-3">
+                        <h3>Gender</h3>
+                        <div style="text-align: left; padding: 1rem 0">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="Gender"
+                                    id="male"
+                                    value="male"
+                                    checked
+                                />Male</label
+                            ><br />
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="Gender"
+                                    id="female"
+                                    value="female"
+                                />Female</label
+                            ><br />
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="Gender"
+                                    id="other"
+                                    value="other"
+                                />Other</label
+                            ><br />
+                        </div>
+                    </label>
+                    <br />
+                    <!-- Phone -->
+                    <label class="card-content-3">
+                        <h3>Phone number</h3>
+                        <input
+                            class="card-input-3"
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            autocomplete="off"
+                            autocorrect="off"
+                            spellcheck="false"
+                        />
+                    </label>
+                    <br />
+                    <!-- Address -->
+                    <label class="card-content-3">
+                        <h3>Address</h3>
+                        <input
+                            class="card-input-3"
+                            type="text"
+                            name="address"
+                            id="address"
+                            autocomplete="off"
+                            autocorrect="off"
+                            spellcheck="false"
+                        />
+                    </label>
+                </div>
+                <!-- End of div 1 -->
+                <!-- Div 2 -->
+                <div class="card-content-1" style="text-align: left">
+                    <h1>REGISTER</h1>
+                    <br />
+                    <label class="card-content-3">
+                        <h3 class="required">Display name</h3>
+                        <input
+                            class="card-input-3"
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                            autocomplete="off"
+                            autocorrect="off"
+                            spellcheck="false"
+                        />
+                    </label>
+                    <br />
+                    <label class="card-content-3">
+                        <h3 class="required">Email</h3>
+                        <input
+                            class="card-input-3"
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            autocomplete="off"
+                            autocorrect="off"
+                            spellcheck="false"
+                        />
+                    </label>
+                    <br />
+                    <label class="card-content-3">
+                        <h3 class="required">Password</h3>
+                        <input
+                            class="card-input-3"
+                            type="password"
+                            name="password"
+                            id="password"
+                            required
+                            autocomplete="off"
+                            autocorrect="off"
+                        />
+                    </label>
+                    <br />
+                    <label class="card-content-3">
+                        <h3 class="required">Confirm password</h3>
+                        <input
+                            class="card-input-3"
+                            type="password"
+                            name="confirmPassword"
+                            id="confirmPassword"
+                            required
+                            autocomplete="off"
+                            autocorrect="off"
+                        />
+                    </label>
+                    <br />
+                    <button class="btn-submit" type="submit">Register</button>
+                </div>
+                <!-- End of div 2 -->
+            </form>
+        </div>
+    </body>
+</html>

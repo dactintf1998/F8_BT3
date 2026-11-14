@@ -1,0 +1,139 @@
+body {
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 1rem 0rem;
+    color: inherit;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0rem 0.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 1.5rem 0rem;
+}
+
+.wrapper {
+    height: 200vh;
+    width: 100vw;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+.card-container-a {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #333;
+    border-radius: 2vw;
+    height: 120vh;
+    width: 28%;
+    padding: 0rem 1rem;
+    margin: 0.5rem;
+    text-align: left;
+}
+
+.card-container-a:nth-child(2) {
+    background-color: black;
+    background: linear-gradient(
+        0deg,
+        rgba(89, 95, 255, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+}
+
+.card-container-btn {
+    display: block;
+    padding: 0.5rem 9vw;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    background-color: inherit;
+    color: inherit;
+}
+
+.card-container-a:nth-child(2) .card-container-btn {
+    background-color: #585efc;
+    color: white;
+}
+
+.card-container-a:nth-child(3) .card-container-btn {
+    background-color: white;
+    color: black;
+}
+
+.card-container-pricing .price {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card-container-functions {
+    margin: 1.5rem 0rem;
+}
+
+.card-container-functions li {
+    margin: 1rem 0rem;
+}
+
+.card-container-functions li::before {
+    content: "* ";
+}
+
+.card-container-a:hover {
+    background-color: #fff;
+    color: black;
+    translate: -1rem -1rem;
+    box-shadow:
+        1rem 1rem 0 -2px black,
+        1rem 1rem 0 0px #333;
+}
+
+.card-container-a:nth-child(2):hover {
+    background-color: #585efc;
+    background: #585efc;
+    color: white;
+    translate: -1rem -1rem;
+    box-shadow:
+        1rem 1rem 0 -2px black,
+        1rem 1rem 0 0px #333;
+}
+
+.card-container-a:hover .card-container-btn:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.card-container-a:nth-child(2):hover .card-container-btn {
+    border: 2px solid #fff;
+}
+
+.card-container-a:nth-child(2):hover .card-container-btn:hover {
+    background-color: white;
+    color: #585efc;
+}
