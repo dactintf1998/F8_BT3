@@ -37,7 +37,7 @@ h2 {
 
 h3 {
     font-size: 1rem;
-    margin: 1.5rem 0rem;
+    margin: 0rem 0rem;
 }
 
 .wrapper {
@@ -47,15 +47,17 @@ h3 {
     text-align: center;
 }
 
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .card-container-a {
-    display: inline-block;
-    vertical-align: top;
+    flex: 1 1 25%;
     border: 2px solid #333;
     border-radius: 2vw;
-    height: 120vh;
     width: 28%;
-    padding: 0rem 1rem;
-    margin: 0.5rem;
+    padding: 2rem;
     text-align: left;
 }
 
