@@ -357,7 +357,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    height: 100vh;
+    height: 200vh;
 }
 
 .rl-card {
@@ -372,12 +372,12 @@ a {
     justify-content: space-between;
 }
 
-.rl-card div:nth-child(3) p::before{
-    content:"* ";
+.rl-card div:nth-child(3) p::before {
+    content: "* ";
     color: var(--pl-primary-color);
 }
 
-.rl-card div:nth-child(3) p{
+.rl-card div:nth-child(3) p {
     font-style: italic;
 }
 
@@ -402,22 +402,22 @@ a {
     color: white;
 }
 
-.rl-card-logo p{
+.rl-card-logo p {
     font-weight: bold;
 }
 
-.rl-card-title{
+.rl-card-title {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.rl-card-input label{
+.rl-card-input label {
     display: flex;
     flex-direction: column;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
-.rl-card-input-2 label{
+.rl-card-input-2 label {
     flex-direction: row;
 }
 
@@ -426,40 +426,45 @@ a {
 }
 
 .rl-card-input label p:first-child:after {
-    content:" *";
+    content: " *";
     color: var(--pl-primary-color);
 }
 
 .rl-card-input label input {
-    width:100%;
+    width: 100%;
     height: 2rem;
     border-radius: 0.5rem;
     border: 1px solid #ccc;
 }
 
-.rl-card-input label input:first-child::placeholder::after{
-content: " *";
+.rl-card-input label input:user-invalid {
+    border: 1px solid var(--pl-primary-color);
 }
 
-.rl-card-checkbox label{
+.rl-card-input label input:first-child::placeholder::after {
+    content: " *";
+}
+
+.rl-card-checkbox label {
     display: flex;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
 
-.rl-a{
+.rl-a {
     color: var(--pl-primary-color);
     text-decoration: underline;
 }
 
-.rl-card-btn, .rl-card-text{
+.rl-card-btn,
+.rl-card-text {
     display: flex;
 }
 
-.rl-card-text{
-    align-self:center;
+.rl-card-text {
+    align-self: center;
 }
 
-.rl-card-btn button{
+.rl-card-btn button {
     display: block;
     background-color: var(--pl-primary-color);
     color: #fff;
@@ -467,5 +472,4 @@ content: " *";
     border-width: 0;
     height: 2.5rem;
     width: 100%;
-
 }

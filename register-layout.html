@@ -23,155 +23,171 @@
     <body>
         <!-- Wrapper -->
         <div class="rl-wrapper">
-            <div class="rl-card">
-                <div class="rl-card-logo">
-                    <div><i class="fa-solid fa-file"></i></div>
-                    <p>Fieldnotes</p>
+            <form action="">
+                <div class="rl-card">
+                    <div class="rl-card-logo">
+                        <div><i class="fa-solid fa-file"></i></div>
+                        <p>Fieldnotes</p>
+                    </div>
+                    <div class="rl-card-title">
+                        <h1>Start your journal</h1>
+                        <p>Free for your first 100 entries. No card needed</p>
+                    </div>
+                    <div class="">
+                        <p>Required field</p>
+                    </div>
+                    <div class="rl-card-input">
+                        <label
+                            ><p>Full name</p>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                autocorrect="off"
+                                autocomplete="off"
+                                required
+                        /></label>
+                    </div>
+                    <div class="rl-card-input">
+                        <label
+                            ><p>Email</p>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                autocorrect="off"
+                                autocomplete="off"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div class="rl-card-input">
+                        <label
+                            ><p>Password</p>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                required
+                                minlength="8"
+                            />
+                            <p style="font-style: italic">
+                                At least 8 characters
+                            </p></label
+                        >
+                    </div>
+                    <div class="rl-card-checkbox">
+                        <label
+                            ><input
+                                type="checkbox"
+                                name="term"
+                                id="term"
+                                required
+                            />
+                            <p>
+                                I agree to the
+                                <a class="rl-a" href="">Terms</a> and
+                                <a href="" class="rl-a">Privacy Policy</a>
+                            </p></label
+                        >
+                    </div>
+                    <div class="rl-card-btn" type="submit">
+                        <button>Create account</button>
+                    </div>
+                    <div class="rl-card-text">
+                        Already have an account?<a href="" class="rl-a">
+                            Log in</a
+                        >
+                    </div>
                 </div>
-                <div class="rl-card-title">
-                    <h1>Start your journal</h1>
-                    <p>Free for your first 100 entries. No card needed</p>
-                </div>
-                <div class="">
-                    <p>Required field</p>
-                </div>
-                <div class="rl-card-input">
-                    <label
-                        ><p>Full name</p>
-                        <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            autocorrect="off"
-                            autocomplete="off"
-                            required
-                    /></label>
-                </div>
-                <div class="rl-card-input">
-                    <label
-                        ><p>Email</p>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            autocorrect="off"
-                            autocomplete="off"
-                            required
-                        />
-                    </label>
-                </div>
-                <div class="rl-card-input">
-                    <label
-                        ><p>Password</p>
-                        <input
-                            type="password"
-                            name="password"
-                            id="password"
-                            required
-                            minlength="8"
-                        />
-                        <p style="font-style: italic">
-                            At least 8 characters
-                        </p></label
-                    >
-                </div>
-                <div class="rl-card-checkbox">
-                    <label
-                        ><input type="checkbox" name="term" id="term" />
+            </form>
+            <form action="">
+                <div class="rl-card">
+                    <div class="rl-card-logo">
+                        <div><i class="fa-solid fa-bag-shopping"></i></div>
+                        <p>Cobble</p>
+                    </div>
+                    <div class="rl-card-title">
+                        <h1>One list for the whole house</h1>
+                        <p>Shared grocery lists that update while you shop</p>
+                    </div>
+                    <div class="">
+                        <p>Required field</p>
+                    </div>
+                    <div class="rl-card-input rl-card-input-2">
+                        <label
+                            ><input
+                                type="text"
+                                name="fname"
+                                id="fname"
+                                autocorrect="off"
+                                autocomplete="off"
+                                required
+                                placeholder="First name *" /><input
+                                type="text"
+                                placeholder="Last name"
+                                name="lname"
+                                id="lname"
+                                autocorrect="off"
+                                autocomplete="off"
+                                required
+                        /></label>
+                    </div>
+                    <div class="rl-card-input">
+                        <label
+                            ><input
+                                type="email"
+                                name="email"
+                                id="email"
+                                autocorrect="off"
+                                autocomplete="off"
+                                required
+                                placeholder="Email *"
+                            />
+                        </label>
+                    </div>
+                    <div class="rl-card-input">
+                        <label
+                            ><input
+                                type="password"
+                                name="password"
+                                id="password"
+                                required
+                                placeholder="Password *"
+                            />
+                            <p style="font-style: italic">
+                                At least 8 characters
+                            </p></label
+                        >
+                    </div>
+                    <div class="rl-card-checkbox">
+                        <label
+                            ><input
+                                type="checkbox"
+                                name="term"
+                                id="term"
+                                required
+                            />
+                            <p>
+                                Send me a weekly meal-plan email (optional)
+                            </p></label
+                        >
+                    </div>
+                    <div class="rl-card-text" style="align-self: self-start">
                         <p>
-                            I agree to the <a class="rl-a" href="">Terms</a> and
+                            By creating an account you agree the
+                            <a class="rl-a" href="">Terms</a> and
                             <a href="" class="rl-a">Privacy Policy</a>
-                        </p></label
-                    >
+                        </p>
+                    </div>
+                    <div class="rl-card-btn">
+                        <button type="submit">Create free account</button>
+                    </div>
+                    <div class="rl-card-text">
+                        Already have an account? <a href="">Log in</a>
+                    </div>
                 </div>
-                <div class="rl-card-btn">
-                    <button><a href="">Create account</a></button>
-                </div>
-                <div class="rl-card-text">
-                    Already have an account?<a href="" class="rl-a"> Log in</a>
-                </div>
-            </div>
-
-            <div class="rl-card">
-                <div class="rl-card-logo">
-                    <div><i class="fa-solid fa-bag-shopping"></i></div>
-                    <p>Cobble</p>
-                </div>
-                <div class="rl-card-title">
-                    <h1>One list for the whole house</h1>
-                    <p>Shared grocery lists that update while you shop</p>
-                </div>
-                <div class="">
-                    <p>Required field</p>
-                </div>
-                <div class="rl-card-input rl-card-input-2">
-                    <label
-                        ><input
-                            type="text"
-                            name="fname"
-                            id="fname"
-                            autocorrect="off"
-                            autocomplete="off"
-                            required
-                            placeholder="First name *" /><input
-                            type="text"
-                            placeholder="Last name"
-                            name="lname"
-                            id="lname"
-                            autocorrect="off"
-                            autocomplete="off"
-                            required
-                    /></label>
-                </div>
-                <div class="rl-card-input">
-                    <label
-                        ><input
-                            type="email"
-                            name="email"
-                            id="email"
-                            autocorrect="off"
-                            autocomplete="off"
-                            required
-                            placeholder="Email *"
-                        />
-                    </label>
-                </div>
-                <div class="rl-card-input">
-                    <label
-                        ><input
-                            type="password"
-                            name="password"
-                            id="password"
-                            required
-                            placeholder="Password *"
-                        />
-                        <p style="font-style: italic">
-                            At least 8 characters
-                        </p></label
-                    >
-                </div>
-                <div class="rl-card-checkbox">
-                    <label
-                        ><input type="checkbox" name="term" id="term" />
-                        <p>
-                            Send me a weekly meal-plan email (optional)
-                        </p></label
-                    >
-                </div>
-                <div class="rl-card-text" style="align-self: self-start">
-                    <p>
-                        By creating an account you agree the
-                        <a class="rl-a" href="">Terms</a> and
-                        <a href="" class="rl-a">Privacy Policy</a>
-                    </p>
-                </div>
-                <div class="rl-card-btn">
-                    <button><a href="">Create free account</a></button>
-                </div>
-                <div class="rl-card-text">
-                    Already have an account? <a href="">Log in</a>
-                </div>
-            </div>
+            </form>
         </div>
         <!-- End wrapper -->
     </body>
